@@ -1,0 +1,86 @@
+<html>
+<head></head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="js/app.js"></script>
+<script src="js/jquery-1.12.0.min.js"></script>
+<body ng-app="myapp">
+<div class="container" ng-controller="AppCtrl">
+    <div class="ticket-form mt50">
+
+        <form name="addContactForm">
+            <div class="form-group">
+                <label><b>What's in your mind:</b> </label>
+                <textarea ng-model="description" class="feild" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <a ng-click="addContact()" class="button add-data">Post</a>
+                <!--<p class="warning"><font color="red">{{mandatoryFields}}</font></p>-->
+            </div>
+        </form>
+
+    </div>
+
+    <div class="datahold mt50" ng-controller="FeedController">
+        <div class="view tile-view" ng-show="filter == 1 ">
+
+            <div class="card-block" ng-repeat="feed in feeds" item="item">
+                <div class="aa">
+                    <p class="equal-height">{{feed.description}}</p>
+                    <div class="car-meta">
+                        <span><a>Like </a>{{feed.like}}</span>
+                        <span>Comment{{feed.comments }}</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="clear"></div>
+
+</div>
+
+
+</div>
+<!--
+<script type="text/javascript" >
+	function resizeequalheight(){ equalHeight($(".equal-height")); } function equalHeight(group) { tallest = 0; group.height(''); group.each(function() { thisHeight = $(this).height(); if(thisHeight > tallest) { tallest = thisHeight; } }); group.height(tallest); }
+	$(function(){ $(window).resize(function() {
+		setTimeout('resizeequalheight()',250) });
+setTimeout('resizeequalheight()',250) });
+
+</script>-->
+<script>
+
+    $(".feild ").on("focus", function () {
+        $(this).parent().addClass("focused")
+    }).on("blur", function () {
+        $(this).parent().removeClass("focused");
+        tmpval = $(this).val();
+        if (tmpval == '') {
+            $(this).parent().removeClass("focused");
+        } else {
+            $(this).parent().addClass("focused");
+        }
+
+
+    });
+    /*
+     jQuery(".add-data").click('',function(){
+     $('.feild').parent().removeClass("focused");
+     setTimeout('resizeequalheight()',250);
+
+     });
+     */
+
+
+</script>
+</body>
+
+</html>
+

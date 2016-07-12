@@ -1,0 +1,225 @@
+html,body{
+margin:0;
+padding:0;
+position:relative;
+font-family:calibri;
+
+}
+body {
+    background: #E6DFDF;
+}
+.mt50{ margin-top:50px;}
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+label,
+ input[type="email"], 
+ input[type="number"], 
+ input[type="password"],
+ input[type="tel"], 
+ input[type="url"], 
+ input[type="text"],
+ textarea{ display:block; font-family:calibri; width:100%;background: none;margin: 10px 0;color: #A7A5A5;}
+textarea{ resize:none;}
+.form-group {margin-bottom: 20px; position:relative;margin-top: 18px;}
+
+.ticket-form, .ticket-listing {
+    padding: 5px 15px 25px 15px;
+    background: #fff;
+    margin:30px 0;
+}
+
+table#list {}
+
+table#list {
+    width: 100%;
+    text-align: left;
+    font-family: calibri;
+	
+}
+table#list tr td{
+    border-bottom: solid 1px #dfdfdf;
+	
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+table#list tr:nth-child(even) td,
+table#list tr:hover td{
+    background: rgba(210, 203, 203, 0.20);
+}
+
+table#list tr:last-child  td { border:none;}
+
+
+table#list tr td,table#list tr th {
+    padding: 12px;
+	vertical-align:top;
+}
+
+table#list tr th {
+    background: #dfdfdf;
+    padding: 8px 12px;
+	text-transform:capitalize;
+}
+.feild {
+    padding: 6px 12px 6px 0;
+    height: 35px;
+    margin-top: 7px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+.feild:focus,
+.feild:hover{ 
+border-color:#36B0EA;
+}
+textarea.feild  { height:120px;}
+
+.button {
+    background: none;
+    border: solid 1px #36B0EA;
+    padding: 5px 14px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    cursor: pointer;
+    color: #36B0EA;
+    font-size: 15px;
+    text-transform: capitalize;
+	text-decoration:none;
+	outline:none;
+}
+.button:hover{
+    background: #36B0EA;
+    color: #fff;
+}
+.form-group label {
+    position: absolute;
+    top: -4px;
+    color: #B3B2B2;
+    font-size: 16px;
+    background: none;
+    background: none;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    right: 0;
+    font-weight: normal;
+}
+
+
+.card-block {
+	display: inline-block;
+	vertical-align: top;
+	width: 237px;
+	padding: 10px 10px 60px 10px;
+	font-family: ebrima;
+	border: solid 1px #ddd;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background: #fff;
+	border-bottom: solid 3px #BFBABA;
+	position: relative;
+}
+
+.card-block:hover { 
+    border-bottom-color:#36B0EA;}
+.card-block:nth-child(3n)  { margin-right:0;}
+.card-block h1 {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+    color: #7D7B7B;
+}
+
+.card-block p {
+    margin: 0;
+    font-size: 14px;
+    color: #7D7B7B;
+    word-wrap: break-word;
+}
+.car-meta {
+font-size: 0;padding: 10px 5px;
+    background: rgba(239, 234, 234, 0.62);position: absolute;bottom: 0;width: 100%;left: 0;box-sizing: border-box;}
+.car-meta span {
+    display: inline-block;
+    font-size: 14px;
+    color: #7D7B7B;
+    width: 50%;
+    text-align: center;
+}
+.clear{ clear:both;}
+.del-modal {}
+
+a#del-modal {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: #696666;
+    padding: 7px 0;
+    color: #fff;
+}
+.focused label {
+    transform: translate(-39px, -24px) scale(0.9,0.9);
+    -webkit-transform: translate(-39px, -19px) scale(0.9,0.9);
+    -moz-transform: translate(-39px, -19px) scale(0.9,0.9);
+    color: #36B0EA;
+}
+
+.form-group label b {
+    font-weight: normal;
+}
+
+.focused .feild {
+    border-color: #36B0EA;
+    color: #36B0EA;
+}
+
+.filter-view ul li {
+    display: inline-block;
+}
+
+.filter-view {
+    text-align: right;
+    width: 100%;
+    /* float: left; */
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.filter-view ul {
+    margin: 0;
+    font-size: 0;
+}
+
+.filter-view ul li a {
+    color: #fff;
+    background: #8A8484;
+    height: 14px;
+    display: block;
+    padding: 10px 9px;
+    font-size: 16px;
+}
+
+.list-view .card-block {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.filter-view ul li.active a {
+    background: #BFBCBC;
+}
